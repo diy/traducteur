@@ -1,6 +1,6 @@
 {
   "name": "traducteur",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple Node.js client for Google's Translation API.",
   "author": "Zachary Bruggeman <zachb@diy.org>",
   "license": "Apache 2.0",
@@ -13,9 +13,8 @@
       "test" : "tap test/*.js"
   },
   "dependencies": {
-    "hyperquest": "~0.1.0",
-    "through": "~2.2.0",
-    "lodash": "~1.0.1"
+    "hyperquest": "~0.1.4",
+    "concat-stream": "~0.1.1"
   },
   "devDepdendencies": {
     "tap": "~0.4.0",
