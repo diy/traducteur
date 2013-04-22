@@ -1,6 +1,6 @@
 {
   "name": "traducteur",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple Node.js client for Google's Translation API.",
   "author": "Zachary Bruggeman <zachb@diy.org>",
   "license": "Apache 2.0",
