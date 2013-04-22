@@ -7,7 +7,7 @@
 
 var async      = require('async'),
     test       = require('tap').test,
-    traducteur = require('../lib/traducteur')('API KEY');
+    traducteur = require('../lib/traducteur')('API-KEY');
 
 
 async.auto({
@@ -40,11 +40,13 @@ async.auto({
 
         test('Translate', function (t) {
             t.type(obj.translate, 'object', 'Results should be an object.');
+            t.equal(obj.translate.data.translations[0].translatedText, 'Hello', 'Results should be correct.');
             t.end();
         });
 
         test('Detect', function (t) {
             t.type(obj.detect, 'object', 'Results should be an object.');
+            t.equal(obj.detect.data.detections[0][0].language, 'fr', 'Results should be correct.');
             t.end();
         });
 
